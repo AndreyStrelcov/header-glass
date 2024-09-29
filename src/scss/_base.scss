@@ -2,8 +2,58 @@
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
+
+// Fonts
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
 // Grid
+.container-default {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.alcenter {
+    align-items: center;
+}
 
 // Colors
 $red: #b40400;
-$menu:#292929;
+$black:#292929;
+
+// Брекпоінти для медіа запросов
+@mixin media($breakpoint) {
+    @if $breakpoint == xs {
+        @media (max-width: 320px) {
+            @content
+        }
+    }
+    @if $breakpoint == sm {
+        @media (max-width: 575px) {
+            @content
+        }
+    }
+    @if $breakpoint == md {
+        @media (max-width: 767px) {
+            @content
+        }
+    }
+    @if $breakpoint == lg {
+        @media (max-width: 991px) {
+            @content
+        }
+    }
+    @if $breakpoint == xl {
+        @media (max-width: 1200px) {
+            @content
+        }
+    }
+}

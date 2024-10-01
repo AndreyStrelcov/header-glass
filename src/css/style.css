@@ -56,16 +56,16 @@ html {
   height: 36px;
 }
 
-.btn-link {
+.btn-list {
   background: none;
   border: none;
   cursor: pointer;
 }
-.btn-link span {
+.btn-list span {
   color: #ffffff;
 }
 
-.dropdown-menu {
+.dropdown-list {
   display: none;
 }
 
@@ -96,4 +96,26 @@ html {
     display: block;
     color: #ffffff;
   }
+}
+.header-menu {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.header-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header-nav {
+  display: block;
+}
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-nav ul li {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

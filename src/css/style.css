@@ -49,6 +49,14 @@ html {
   color: #ffffff;
 }
 
+.dropdown-list {
+  display: none;
+}
+
+.dropdown-list__active {
+  display: block;
+}
+
 .header-top-wrap {
   display: flex;
   justify-content: space-between;
@@ -63,10 +71,6 @@ html {
 }
 .btn-list span {
   color: #ffffff;
-}
-
-.dropdown-list {
-  display: none;
 }
 
 .header-top__help {
@@ -118,4 +122,21 @@ html {
 }
 .header-nav ul li {
   font-weight: 500;
+}
+
+.header-menu__search {
+  position: relative;
+  margin-right: 10px;
+}
+
+.header-input {
+  padding: 10px 30px;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+}
+
+.btn-search {
+  position: absolute;
+  top: 6px;
+  left: 2px;
 }/*# sourceMappingURL=style.css.map */

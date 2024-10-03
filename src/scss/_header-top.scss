@@ -22,6 +22,12 @@
         color:#ffffff;
     }
 }
+.dropdown-list {
+    display: none;
+}
+.dropdown-list__active {
+    display: block;
+}
 .header-top-wrap {
     display: flex;
     justify-content: space-between;
@@ -35,9 +41,6 @@
     & span {
         color: #ffffff;
     }
-}
-.dropdown-list {
-    display: none;
 }
 .header-top__help {
     display: flex;

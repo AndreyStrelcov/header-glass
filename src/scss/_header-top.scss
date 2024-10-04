@@ -4,6 +4,7 @@
     font-size: 13px;
     &__left {
         display: flex; 
+        align-items: center;
     }
     &__leng {
         display: flex;
@@ -13,10 +14,13 @@
         }
     }
     &__contact {
+        position: relative;
+    }
+    &__btn {
         display: flex;
         align-items: center;
     }
-    &__contact ::before {
+    &__btn ::before {
         content: " | ";
         margin: 0 5px 0 2px;
         color:#ffffff;
@@ -24,6 +28,21 @@
 }
 .dropdown-list {
     display: none;
+    position:absolute;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 #eae9e5,0 3px 24px -2px rgba(58,72,80,.34);
+    background: #fff;
+    width: 170px;
+    left: 15px;
+    & a {
+        color: #292929;
+    }
+    & li:last-child {
+        margin-top: 15px;
+    }
 }
 .dropdown-list__active {
     display: block;

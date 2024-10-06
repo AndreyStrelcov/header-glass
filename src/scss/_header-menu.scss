@@ -1,5 +1,5 @@
 .header-menu {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid $border;
 }
 .header-menu-wrap {
     display: flex;
@@ -16,6 +16,12 @@
         & li {
             font-weight: 500;
         }
+    }
+    &__item {
+        color: $black;
+    }
+    &__item--red {
+        color: $red;
     }
 }
 .header-menu__search {

@@ -11,23 +11,10 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
-// Grid
-.container-default {
-    max-width: 1400px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-.flex {
-    display: flex;
-    flex-wrap: nowrap;
-}
-.alcenter {
-    align-items: center;
-}
-
 // Colors
 $red: #b40400;
 $black:#292929;
+$border: #E5E5E5;
 
 // Брекпоінти для медіа запросов
 @mixin media($breakpoint) {

@@ -21,8 +21,12 @@ html {
   flex-wrap: nowrap;
 }
 
-.alcenter {
+.items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .header-top {
@@ -141,6 +145,12 @@ html {
 }
 .header-nav ul li {
   font-weight: 500;
+}
+.header-nav__item {
+  color: #292929;
+}
+.header-nav__item--red {
+  color: #b40400;
 }
 
 .header-menu__search {

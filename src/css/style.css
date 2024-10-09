@@ -37,12 +37,8 @@ html {
   display: flex;
   align-items: center;
 }
-.header-top__leng {
-  display: flex;
-  align-items: center;
-}
-.header-top__leng svg {
-  margin-right: 10px;
+.header-top__lang {
+  position: relative;
 }
 .header-top__contact {
   position: relative;
@@ -60,14 +56,12 @@ html {
 .dropdown-list {
   display: none;
   position: absolute;
-  margin-top: 5px;
   padding: 10px;
   text-align: left;
   border-radius: 5px;
   box-shadow: 0 1px 0 0 #eae9e5, 0 3px 24px -2px rgba(58, 72, 80, 0.34);
   background: #fff;
   width: 170px;
-  left: 15px;
 }
 .dropdown-list a {
   color: #292929;
@@ -76,7 +70,24 @@ html {
   margin-top: 15px;
 }
 
-.dropdown-list__active {
+.dropdown-list__contact {
+  margin-top: 5px;
+  left: 15px;
+}
+
+.dropdown-list__lang {
+  margin-top: 26px;
+  left: 5px;
+}
+.dropdown-list__lang svg {
+  margin-right: 10px;
+}
+
+.open-lang {
+  display: block;
+}
+
+.open-contact {
   display: block;
 }
 
@@ -94,6 +105,9 @@ html {
 }
 .btn-list span {
   color: #ffffff;
+}
+.btn-list svg {
+  margin-right: 10px;
 }
 
 .header-top__help {

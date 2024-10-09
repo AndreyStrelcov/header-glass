@@ -1,10 +1,25 @@
-const burger = document.querySelector('#burger');
-const menu = document.querySelector('#menu');
+// Lang const
+const btnLang =document.querySelector('#btn-lang');
+const listLang = document.querySelector('#list-lang');
 
-burger.addEventListener('click', () => {
-    if (menu.classList.contains('dropdown-list__active') == true) {
-        menu.classList.remove('dropdown-list__active');
+// Contact const
+const btn = document.querySelector('#btn-list');
+const list = document.querySelector('#list');
+
+// Lang event
+// btnLeng.addEventListener('click', () => {
+//     if (listLeng.classList.contains('open-lang') == true) {
+//         listLeng.classList.remove('open-lang');
+//     } else {
+//         listLeng.classList.add('open-lang');
+//     }
+// })
+
+// Contact event
+btn.addEventListener('click', () => {
+    if (list.classList.contains('open-contact') == true) {
+        list.classList.remove('open-contact');
     } else {
-        menu.classList.add('dropdown-list__active');
+        list.classList.add('open-contact');
     }
 })

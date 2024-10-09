@@ -16,6 +16,13 @@ $red: #b40400;
 $black:#292929;
 $border: #E5E5E5;
 
+
+// Color elements
+.aW {
+    color: #fff;
+}
+
+
 // Брекпоінти для медіа запросов
 @mixin media($breakpoint) {
     @if $breakpoint == xs {

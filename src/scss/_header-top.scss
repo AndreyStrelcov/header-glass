@@ -2,47 +2,21 @@
 .header-top {
     background: $black;
     font-size: 13px;
-    &__left {
-        display: flex; 
-        align-items: center;
-    }
     &__lang {
         position: relative;
     }
     &__contact {
         position: relative;
     }
-    &__btn {
-        display: flex;
-        align-items: center;
-    }
-    &__btn ::before {
-        content: " | ";
-        margin: 0 5px 0 2px;
-        color:#ffffff;
-    }
 }
-.dropdown-list {
-    display: none;
-    position:absolute;
-    padding: 10px;
-    text-align: left;
-    border-radius: 5px;
-    box-shadow: 0 1px 0 0 #eae9e5,0 3px 24px -2px rgba(58,72,80,.34);
-    background: #fff;
-    width: 170px;
-    & a {
-        color: #292929;
-    }
-    & li:last-child {
-        margin-top: 15px;
-    }
+.header-top-wrap {
+    height: 36px;
 }
-.dropdown-list__contact {
+.drop-list__contact {
     margin-top: 5px;
     left: 15px;
 }
-.dropdown-list__lang {
+.drop-list__lang {
     margin-top: 26px;
     left: 5px;
     & svg {
@@ -55,50 +29,29 @@
 .open-contact {
     display: block;
 }
-.header-top-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 36px;
-}
 .btn-list {
-    background: none;
-    border: none;
-    cursor: pointer;
     & span {
         color: #ffffff;
-    }
+    } 
     & svg {
         margin-right: 10px;
-    }
+    } 
 }
-.header-top__help {
-    display: flex;
-    &__return {
-        & a {
-            color:#ffffff
-        }
+
+.header-top__right {
+    & a {
+        color: #ffffff;
     }
-    &__return ::after {
-        content: " | ";
-        margin: 0 5px 0 2px;
-        color:#ffffff;
-    }
-    &__delivery {
-        & a {
-            color: #ffffff;
-        }
-    }
-}
-.help-mob {
-    display: none;
-}
-@media (max-width: 575px) {
-    .header-top__help {
+    &--mob {
         display: none;
     }
-    .help-mob {
-        display: block;
-        color: #ffffff;
+}
+@media (max-width: 575px) {
+    .header-top__right {
+        display: none;
+        &--mob {
+            display: block;
+            color: #ffffff;
+        }
     }
 }

@@ -10,6 +10,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.aW {
+  color: #fff;
+}
+
 .container-default {
   max-width: 1400px;
   padding: 0 15px;
@@ -29,31 +33,11 @@ html {
   justify-content: space-between;
 }
 
-.header-top {
-  background: #292929;
-  font-size: 13px;
-}
-.header-top__left {
-  display: flex;
-  align-items: center;
-}
-.header-top__lang {
-  position: relative;
-}
-.header-top__contact {
-  position: relative;
-}
-.header-top__btn {
-  display: flex;
-  align-items: center;
-}
-.header-top__btn ::before {
-  content: " | ";
-  margin: 0 5px 0 2px;
-  color: #ffffff;
+.mr5 {
+  margin-right: 5px;
 }
 
-.dropdown-list {
+.drop-list {
   display: none;
   position: absolute;
   padding: 10px;
@@ -63,23 +47,50 @@ html {
   background: #fff;
   width: 170px;
 }
-.dropdown-list a {
+.drop-list a {
   color: #292929;
 }
-.dropdown-list li:last-child {
+.drop-list li:last-child {
   margin-top: 15px;
 }
 
-.dropdown-list__contact {
+.btn-list {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.line ::before {
+  content: " | ";
+  margin: 0 5px 0 2px;
+  color: #ffffff;
+}
+
+.header-top {
+  background: #292929;
+  font-size: 13px;
+}
+.header-top__lang {
+  position: relative;
+}
+.header-top__contact {
+  position: relative;
+}
+
+.header-top-wrap {
+  height: 36px;
+}
+
+.drop-list__contact {
   margin-top: 5px;
   left: 15px;
 }
 
-.dropdown-list__lang {
+.drop-list__lang {
   margin-top: 26px;
   left: 5px;
 }
-.dropdown-list__lang svg {
+.drop-list__lang svg {
   margin-right: 10px;
 }
 
@@ -91,18 +102,6 @@ html {
   display: block;
 }
 
-.header-top-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 36px;
-}
-
-.btn-list {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 .btn-list span {
   color: #ffffff;
 }
@@ -110,30 +109,18 @@ html {
   margin-right: 10px;
 }
 
-.header-top__help {
-  display: flex;
-}
-.header-top__help__return a {
+.header-top__right a {
   color: #ffffff;
 }
-.header-top__help__return ::after {
-  content: " | ";
-  margin: 0 5px 0 2px;
-  color: #ffffff;
-}
-.header-top__help__delivery a {
-  color: #ffffff;
-}
-
-.help-mob {
+.header-top__right--mob {
   display: none;
 }
 
 @media (max-width: 575px) {
-  .header-top__help {
+  .header-top__right {
     display: none;
   }
-  .help-mob {
+  .header-top__right--mob {
     display: block;
     color: #ffffff;
   }

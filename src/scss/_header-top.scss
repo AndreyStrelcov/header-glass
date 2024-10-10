@@ -8,25 +8,35 @@
     &__contact {
         position: relative;
     }
+    &__right--mob {
+        position: relative;
+    }
 }
 .header-top-wrap {
     height: 36px;
 }
 .drop-list__contact {
-    margin-top: 5px;
+    top: 20px;
     left: 15px;
 }
 .drop-list__lang {
-    margin-top: 26px;
+    top: 23px;
     left: 5px;
     & svg {
         margin-right: 10px;
     }
 }
+.drop-list__right {
+    top: 20px;
+    left: -90px;
+}
 .open-lang {
     display: block;
 }
 .open-contact {
+    display: block;
+}
+.open-right {
     display: block;
 }
 .btn-list {

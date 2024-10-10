@@ -60,7 +60,7 @@ html {
   cursor: pointer;
 }
 
-.line ::before {
+.line-H ::before {
   content: " | ";
   margin: 0 5px 0 2px;
   color: #ffffff;
@@ -76,22 +76,30 @@ html {
 .header-top__contact {
   position: relative;
 }
+.header-top__right--mob {
+  position: relative;
+}
 
 .header-top-wrap {
   height: 36px;
 }
 
 .drop-list__contact {
-  margin-top: 5px;
+  top: 20px;
   left: 15px;
 }
 
 .drop-list__lang {
-  margin-top: 26px;
+  top: 23px;
   left: 5px;
 }
 .drop-list__lang svg {
   margin-right: 10px;
+}
+
+.drop-list__right {
+  top: 20px;
+  left: -90px;
 }
 
 .open-lang {
@@ -99,6 +107,10 @@ html {
 }
 
 .open-contact {
+  display: block;
+}
+
+.open-right {
   display: block;
 }
 
@@ -169,4 +181,16 @@ html {
   position: absolute;
   top: 6px;
   left: 2px;
+}
+
+@media (max-width: 575px) {
+  .header-nav {
+    display: none;
+  }
+  .header-menu__search {
+    margin-right: 27px;
+  }
+  .header-input {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

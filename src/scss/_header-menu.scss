@@ -38,3 +38,14 @@
     top: 6px;
     left: 2px;
 }
+@media (max-width: 575px) {
+    .header-nav {
+        display: none;
+    }
+    .header-menu__search {
+        margin-right: 27px;
+    }
+    .header-input {
+        display: none;
+    }
+}

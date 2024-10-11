@@ -2,16 +2,12 @@
     border-bottom: 1px solid $border;
 }
 .header-menu-wrap {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 80px;
 }
 .header-nav {
     display: block;
     & ul {
-        display: flex;
-        align-items: center;
         gap: 30px;
         & li {
             font-weight: 500;
@@ -22,6 +18,11 @@
     }
     &__item--red {
         color: $red;
+    }
+}
+.burger-icon {
+    span {
+        display: none;
     }
 }
 .header-menu__search {
@@ -38,14 +39,52 @@
     top: 6px;
     left: 2px;
 }
+
 @media (max-width: 575px) {
     .header-nav {
         display: none;
     }
     .header-menu__search {
-        margin-right: 27px;
+        margin-right: 0;
     }
     .header-input {
         display: none;
+    }
+    .btn-search {
+        position: relative;
+        top: 0;
+        left: 15px;
+    }
+
+    // Mobile menu
+    .burger-icon {
+        width: 24px;
+        height: 14px;
+        cursor: pointer;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: $black;
+            margin-bottom: 4px;
+            transition: 1s all;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .open-burger {
+        span {
+            margin-bottom: -2px;
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
     }
 }

@@ -1,19 +1,8 @@
-// Lang const
-const btnLang =document.querySelector('#btn-lang');
-const listLang = document.querySelector('#list-lang');
 
 // Contact const
 const btn = document.querySelector('#btn-list');
 const list = document.querySelector('#list');
 
-// Lang event
-// btnLeng.addEventListener('click', () => {
-//     if (listLeng.classList.contains('open-lang') == true) {
-//         listLeng.classList.remove('open-lang');
-//     } else {
-//         listLeng.classList.add('open-lang');
-//     }
-// })
 
 // Contact event
 btn.addEventListener('click', () => {
@@ -22,4 +11,24 @@ btn.addEventListener('click', () => {
     } else {
         list.classList.add('open-contact');
     }
+})
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.header-nav'),
+    menuItem = document.querySelectorAll('.header-nav__item'),
+    humburger = document.querySelector('.burger-icon');
+
+    humburger.addEventListener('click', () => {
+        humburger.classList.toggle('open-burger');
+        menu.classList.toggle('open-nav');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            humburger.classList.toggle('open-burger');
+            menu.classList.toggle('open-nav');
+        })
+    })
 })

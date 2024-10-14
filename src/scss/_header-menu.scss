@@ -13,10 +13,10 @@
             font-weight: 500;
         }
     }
-    &__item {
+    &__link {
         color: $black;
     }
-    &__item--red {
+    &__link--red {
         color: $red;
     }
 }
@@ -55,7 +55,7 @@
         box-shadow: 0 5px 7px rgba(0,0,0,.2);
         background: #fff;
         z-index: 20;
-        transition: 0.6s all;
+        transition: 0.7s all;
         ul {
             flex-direction: column;
             align-items: start;
@@ -79,19 +79,23 @@
         width: 24px;
         height: 14px;
         cursor: pointer;
+        z-index: 30;
         span {
             display: block;
             height: 2px;
             width: 100%;
             background: $black;
             margin-bottom: 4px;
-            transition: 1s all;
+            transition: 0.6s all;
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
     .open-burger {
+        position: absolute;
+        top: 20px;
+        right: 15px;
         span {
             margin-bottom: -2px;
             &:nth-child(1) {
@@ -116,7 +120,6 @@
         ul {
             padding: 20px 0;
             li:last-child {
-                border-top: 1px solid #E5E5E5;
                 padding-top: 10px;
             }
             a {

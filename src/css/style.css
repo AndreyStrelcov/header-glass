@@ -183,8 +183,8 @@ html {
 
 .btn-search {
   position: absolute;
-  top: 6px;
-  left: 2px;
+  top: 3px;
+  left: -1px;
 }
 
 @media (max-width: 575px) {
@@ -254,17 +254,18 @@ html {
     right: 0;
   }
   .nav-bottom {
-    display: block;
+    display: flex;
     border-top: 1px solid #E5E5E5;
     width: 100%;
+    padding-top: 20px;
+    gap: 15px;
   }
-  .nav-bottom ul {
-    padding: 20px 0;
+  .nav-bottom a {
+    display: block;
+    color: #292929;
   }
-  .nav-bottom ul li:last-child {
-    padding-top: 10px;
-  }
-  .nav-bottom ul a {
+  .nav-bottom span {
+    display: block;
     color: #292929;
   }
 }
@@ -279,4 +280,8 @@ html {
 .header-promo span {
   color: #b40400;
   font-size: 18px;
+}
+
+.banner img {
+  max-width: 1920px;
 }/*# sourceMappingURL=style.css.map */

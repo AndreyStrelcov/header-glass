@@ -34,18 +34,17 @@
 }
 .header-input {
     padding: 10px 30px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid $border;
     border-radius: 5px;
 }
 .btn-search {
     position: absolute;
-    top: 6px;
-    left: 2px;
+    top: 3px;
+    left: -1px;
 }
 
 @media (max-width: 575px) {
     .header-nav {
-        // display: none;
         position: fixed;
         top: 0;
         right: -100%;
@@ -110,21 +109,21 @@
         }
     }
     .open-nav {
-        // display: block;
         right: 0;
     }
     .nav-bottom {
-        display: block;
-        border-top: 1px solid #E5E5E5;
+        display: flex;
+        border-top: 1px solid $border;
         width: 100%;
-        ul {
-            padding: 20px 0;
-            li:last-child {
-                padding-top: 10px;
-            }
-            a {
-                color: $black;
-            }
+        padding-top: 20px;
+        gap: 15px;
+        a {
+            display: block;
+            color: $black
+        }
+        span {
+            display: block;
+            color: $black;
         }
     }
 }

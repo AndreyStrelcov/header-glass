@@ -299,6 +299,9 @@ html {
 .footer-wrapper {
   padding-top: 60px;
 }
+.footer-top {
+  justify-content: space-between;
+}
 
 .footer-contact {
   flex: 0 0 380px;
@@ -307,16 +310,22 @@ html {
 .footer-contact__logo {
   margin-bottom: 60px;
 }
-.footer-contact__items {
+
+.footer-contact__item {
   color: #cfcfcf;
   line-height: 25px;
+  margin-bottom: 25px;
 }
-.footer-contact__items span {
+.footer-contact__item span {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
-.footer-contact__items a {
+.footer-contact__item a {
   color: #cfcfcf;
-  font-size: 12px;
+  font-size: 13px;
+}
+
+.f-column a {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

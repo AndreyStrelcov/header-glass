@@ -21,7 +21,8 @@
     }
 }
 .burger-icon {
-    span {
+    display: none;
+    & span {
         display: none;
     }
 }

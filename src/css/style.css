@@ -163,6 +163,9 @@ html {
   color: #b40400;
 }
 
+.burger-icon {
+  display: none;
+}
 .burger-icon span {
   display: none;
 }

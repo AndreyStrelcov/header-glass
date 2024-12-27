@@ -16,6 +16,20 @@
     top: 3px;
     left: -1px;
 }
+.header-menu__basket {
+    button {
+        position: relative;
+        background: none;
+        border: none;
+    }
+    span {
+        position: absolute;
+        font-size: 13px;
+        font-weight: 500;
+        right: 1px;
+        color: $red;
+    }
+}
 .header-menu__item {
     margin-right: 1rem;
 }
@@ -43,6 +57,7 @@
     } 
     .menu-mob {
         display: block;
+        margin-left: 10px;
         width: 30px;
         height: 14px;
         z-index: 30;
@@ -90,7 +105,4 @@
         top: 0;
         left: 15px;
     }
-
-    // Mobile menu
-    
 }

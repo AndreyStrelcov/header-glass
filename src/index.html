@@ -11,6 +11,7 @@
     <link href="javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
     <script src="javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <link href="javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/main.js" type="text/javascript"></script>
 
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/reset.css">
@@ -104,9 +105,9 @@
         </div>
         <!--------------- Header top end ------------------>
 
-        <!--------------- Header menu start --------------->
-        <div class="header-menu">
-            <div class="container-default header-menu-wrap flex items-center">
+        <!--------------- Header second start --------------->
+        <div class="line-b">
+            <div class="container-default header-second flex items-center">
                 <!-- Logo start -->
                 <div class="header-logo">
                     <a href="#" class="">
@@ -119,52 +120,13 @@
                 <!-- Logo end -->
 
                 <!-- Menu start -->
-                <!-- <nav class="header-nav">
-                    <ul class="flex items-center">
-                        <li class="header-nav__item">
-                            <a href="" class="header-nav__link">Oкуляри</a></li>
-                        <li class="header-nav__item">
-                            <a href="" class="header-nav__link">Жінкам</a></li>
-                        <li class="header-nav__item">
-                            <a href="" class="header-nav__link">Чоловікам</a></li>
-                        <li class="header-nav__item">
-                            <a href="" class="header-nav__link">Дітям</a></li>
-                        <li class="header-nav__item">
-                            <a href="" class="header-nav__link--red">Розпродаж</a>
-                        </li>
-                        <div class="nav-bottom">
-                            <div class="nav-bottom__icon">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.1667 4V3.5H18.6667H13.3334H12.8334V4V4.33333C12.8334 4.34241 12.8334 4.35148 12.8334 4.36054C12.8333 4.57257 12.8333 4.77864 12.8561 4.94859C12.8819 5.14019 12.9447 5.35883 13.1263 5.54044C13.3079 5.72205 13.5265 5.78481 13.7181 5.81057C13.8881 5.83342 14.0941 5.83338 14.3062 5.83334C14.3152 5.83334 14.3243 5.83333 14.3334 5.83333H17.6667C17.6758 5.83333 17.6849 5.83334 17.6939 5.83334C17.9059 5.83338 18.112 5.83342 18.282 5.81057C18.4736 5.78481 18.6922 5.72205 18.8738 5.54044C19.0554 5.35883 19.1182 5.14019 19.1439 4.94859C19.1668 4.77864 19.1668 4.57257 19.1667 4.36054C19.1667 4.35148 19.1667 4.34241 19.1667 4.33333V4Z" stroke="#222222"/>
-                                    <rect x="8.5" y="3.16669" width="15" height="25.6667" rx="1.5" stroke="#222222"/>
-                                    <circle cx="16" cy="24" r="1.33333" fill="#222222"/>
-                                </svg>
-                            </div>
-                            <a href="nav-bottom__phone">
-                                Телефон
-                                <span>+38(050)656-22-98</span>
-                            </a>
-                        </div>
-                    </ul>
-                </nav> -->
-
-
-
-                <nav id="menu" class="header-nav">
-                    <div class="navbar-header">
-                        <button type="button" class="burger-icon" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                            <div class="">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
+                
+                <nav class="header-menu">
+        
+                    <ul class="flex justify-center header-menu__list">
                         <!-- Проверка на подкатегорию -->
-                        <li class="dropdown header-nav__item">
-                            <a href="#" class="dropdown-toggle header-nav__link" data-toggle="dropdown">Glasses</a>
+                        <li class="header-menu__item">
+                            <a href="#" class="">Glasses</a>
                             <div class="dropdown-menu">
                             <!-- <div class="dropdown-inner"> {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %} -->
                                 <ul class="list-unstyled">
@@ -174,28 +136,27 @@
                             </div> 
                             <!-- </div> -->
                         </li>
-                                <!-- Если нет дочерних -->
-                                <li class="header-nav__item">
-                                        <a href="" class="header-nav__link">Oкуляри</a>
-                                </li>
-                                <li class="header-nav__item">
-                                    <a href="" class="header-nav__link">Чоловікам</a>
-                                </li>
-                                <li class="header-nav__item">
-                                    <a href="" class="header-nav__link">Жінкам</a>
-                                </li>
-                                <li class="header-nav__item">
-                                    <a href="" class="header-nav__link">Розпродаж</a>
-                                </li>
+                        <!-- Если нет дочерних -->
+                        <li class="header-menu__item">
+                            <a href="" class="">Oкуляри</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="" class="">Чоловікам</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="" class="">Жінкам</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="" class="">Розпродаж</a>
+                        </li>
                     </ul>
-                    </div>
                 </nav>
-
                 <!-- Menu end -->
+                <!-- Start block right -->
                 <div class="header-icons flex items-center">
-                    <!-- Search start -->
-                    <div class="header-menu__search">
-                        <input type="text" class="header-input" placeholder="Пошук окулярів">
+                    
+                    <div id="search" class="input-group">
+                        <input type="text" name="search" value="" placeholder="Пошук окулярів" class="header-input" />
                         <button class="btn-list btn-search">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="14.6666" cy="14.6667" r="8" stroke="#222222"/>
@@ -203,18 +164,21 @@
                             </svg>
                         </button>
                     </div>
-                    <!-- Search end -->
-                    <div class="header-menu__basket">
-                        <a href="">
+                    
+
+                    <div id="cart" class="header-menu__basket flex">
+                        <button type="button" data-toggle="dropdown" data-loading-text="" class="dropdown-toggle">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.66663 6H7.22511C7.92083 6 8.26869 6 8.53058 6.18876C8.79246 6.37752 8.90247 6.70753 9.12247 7.36754L9.99996 10" stroke="#222222" stroke-linecap="round"/>
                                 <path d="M23.3333 23.3333H10.7345C10.1233 23.3333 9.81775 23.3333 9.60644 23.2276C9.31329 23.0808 9.11067 22.7997 9.06417 22.4752C9.03064 22.2413 9.12728 21.9514 9.32055 21.3716V21.3716C9.53467 20.7292 9.64173 20.408 9.82312 20.1582C10.0746 19.812 10.4304 19.5555 10.8384 19.4264C11.1328 19.3333 11.4713 19.3333 12.1485 19.3333H19.3333" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M19.6787 19.3333H13.971C12.6917 19.3333 12.0521 19.3333 11.5512 19.003C11.0502 18.6727 10.7983 18.0848 10.2944 16.909L9.12556 14.1818C8.31606 12.2929 7.91131 11.3485 8.35592 10.6743C8.80053 10 9.82802 10 11.883 10H22.1638C24.4629 10 25.6124 10 26.046 10.7471C26.4795 11.4942 25.9092 12.4923 24.7686 14.4884L23.1517 17.3179C22.5898 18.3013 22.3088 18.793 21.8432 19.0632C21.3777 19.3333 20.8114 19.3333 19.6787 19.3333Z" stroke="#222222" stroke-linecap="round"/>
                                 <circle cx="22.6667" cy="26.6667" r="1.33333" fill="#222222"/>
                                 <circle cx="12" cy="26.6667" r="1.33333" fill="#222222"/>
-                            </svg>
-                        </a>
+                            </svg> 
+                            <span id="cart-total">0</span>
+                        </button>
                     </div>
+
                     <div class="header-menu__favorite">
                         <a href="">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -222,6 +186,7 @@
                             </svg>
                         </a>
                     </div>  
+
                     <div class="header-menu__user">
                         <a href="">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,11 +194,17 @@
                                 <path d="M6.85847 21.3783C7.7069 19.1009 10.0814 18 12.5117 18H19.4883C21.9186 18 24.2931 19.1009 25.1415 21.3783C25.5255 22.409 25.849 23.6354 25.9594 25.0002C26.004 25.5507 25.5523 26 25 26H7C6.44772 26 5.99602 25.5507 6.04055 25.0002C6.15095 23.6354 6.47449 22.409 6.85847 21.3783Z" stroke="#292929" stroke-linecap="round"/>
                             </svg>
                         </a>
+                    </div>
+                    <div class="menu-mob">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>   
-                </div>   
+                </div>  
+                <!-- End block right  -->
             </div>
         </div>
-        <!--------------- Header menu end ----------------->
+        <!--------------- Header second end ----------------->
 
         <!--------------- Promo line ---------------------->
         <div class="header-promo container-default flex items-center">
@@ -305,6 +276,6 @@
         </div>
     </footer>
     <!------------------- Footer end ---------------------->
-    <!-- <script src="js/main.js"></script> -->
+<script src="/js/main.js"></script>
 </body>
 </html>

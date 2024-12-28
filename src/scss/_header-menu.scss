@@ -16,27 +16,38 @@
     top: 3px;
     left: -1px;
 }
-.header-menu__basket {
-    button {
-        position: relative;
-        background: none;
-        border: none;
+.header-menu {
+    &__basket {
+        button {
+            position: relative;
+            background: none;
+            border: none;
+        }
+        span {
+            position: absolute;
+            font-size: 13px;
+            font-weight: 500;
+            right: 1px;
+            color: $red;
+        }
     }
-    span {
-        position: absolute;
-        font-size: 13px;
-        font-weight: 500;
-        right: 1px;
-        color: $red;
+    &__item {
+        margin-right: 30px;
+        a {
+            color: $black;
+            font-weight: 500;
+            text-decoration: none;
+            &:hover {
+                color: $brown;
+            }
+        }
     }
 }
-.header-menu__item {
-    margin-right: 1rem;
-}
+
 .menu-mob {
     display: none;
 }
-@media (max-width: 575px) {
+@media (max-width: 1200px) {
   // Hamburger menu
   .header-menu {
     // display: none;

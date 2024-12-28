@@ -180,16 +180,23 @@ html {
   right: 1px;
   color: #b40400;
 }
-
 .header-menu__item {
-  margin-right: 1rem;
+  margin-right: 30px;
+}
+.header-menu__item a {
+  color: #292929;
+  font-weight: 500;
+  text-decoration: none;
+}
+.header-menu__item a:hover {
+  color: #ae946d;
 }
 
 .menu-mob {
   display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1200px) {
   .header-menu {
     position: fixed;
     top: 0;
